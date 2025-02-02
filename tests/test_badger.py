@@ -3,7 +3,7 @@ import json
 import tempfile
 import shutil
 import unittest
-from badgerdb_python.badger import BadgerDB
+from badgerdb.badger import BadgerDB
 
 class TestBadgerDB(unittest.TestCase):
     def setUp(self):
