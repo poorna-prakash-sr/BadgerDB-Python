@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "badgerdb-python"
+version = "0.1.0"
+description = "Python wrapper for BadgerDB"
+authors = ["Poorna Prakash SR<poornaprakashsr@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+ctypes = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+unittest = "^2.0"
+tox = "^3.0"
+
+[tool.poetry.scripts]
+badgerdb = "badgerdb:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = "black"
+known_third_party = ["ctypes"]
