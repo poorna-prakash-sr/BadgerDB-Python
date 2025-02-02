@@ -4,18 +4,18 @@ with open("README.md", 'r') as f:
     description = f.read()   
 
 setup(
-    name="badgerdb-python",
+    name="badgerdb",
     author="Poorna Prakash SR",
     author_email="poornaprakashsr@gmail.com",
     description = "Python wrapper for BadgerDB",
-    version="0.5.0",
+    version="0.7.0",
     packages=find_packages(),
     install_requires=[],
     include_package_data=True,
     long_description=description,
     long_description_content_type='text/markdown',
     package_data={
-        "badger": ["libbadger.so"]
+        "badgerdb": ["libbadger.so"]
     },
     classifiers=[
         "Programming Language :: Python :: 3",
