@@ -29,8 +29,7 @@ jobs:
       - name: Build release distributions
         run: |
           # NOTE: put your own distribution build steps here.
-          python -m pip install build
-          python -m build
+          python setup.py sdist
 
       - name: Upload distributions
         uses: actions/upload-artifact@v4
@@ -68,3 +67,5 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/
+          password: ${{ secrets.pypi_password }}
+          repository-url: https://pypi.org/project/badgerdb-python/
