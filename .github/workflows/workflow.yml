@@ -72,4 +72,3 @@ jobs:
         with:
           packages-dir: dist/
           password: ${{ secrets.pypi_password }}
-          repository-url: https://pypi.org/project/badgerdb/
