@@ -1,4 +1,40 @@
+# Ignore Python compiled files
 __pycache__/
-*.so
 *.pyc
 *.pyo
+*.pyd
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+*.whl
+*.tar.gz
+*.zip
+
+# Ignore Poetry and PyPI artifacts
+poetry.lock
+pip-wheel-metadata/
+.cache/
+
+# Ignore virtual environments
+venv/
+.env/
+.virtualenvs/
+
+# Ignore test coverage and logs
+.coverage
+htmlcov/
+*.log
+*.out
+*.err
+
+# Ignore IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore temporary files
+.DS_Store
+Thumbs.db
