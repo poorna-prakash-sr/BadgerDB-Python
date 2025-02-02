@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "badgerdb-python"
+name = "badger"
 version = "0.3.0"
 description = "Python wrapper for BadgerDB"
 authors = ["Poorna Prakash SR <poornaprakashsr@gmail.com>"]
@@ -15,7 +15,7 @@ unittest = "^2.0"
 tox = "^3.0"
 
 [tool.poetry.scripts]
-badgerdb= "badgerdb_python.badger:main"
+badgerdb= "badgerdb.badger:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
